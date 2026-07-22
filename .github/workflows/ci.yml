@@ -17,11 +17,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: pip install -e .
-<<<<<<< HEAD
       - run: pip install cryptography
-=======
-pip install cryptography
->>>>>>> a90f36168e40320d3e71105087fd9f5c28063130
       - run: pip install pytest
       - run: python -m pytest tests/ -v
-
