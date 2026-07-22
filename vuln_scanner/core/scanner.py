@@ -87,7 +87,7 @@ class Scanner:
             5900: "vnc", 6379: "redis", 8080: "http-proxy",
             8443: "https-alt", 27017: "mongodb",
         }
-        return common_ports.get(target.port, "unknown")
+        return common_ports.get(port, "unknown")
 
     def _grab_banner(self, sock, port):
         try:
